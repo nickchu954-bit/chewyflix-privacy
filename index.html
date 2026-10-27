@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChewyFlix Privacy Policy</title>
+<meta name="description" content="What the ChewyFlix movie and TV app stores and where.">
+<style>
+  :root { --bg: #ffffff; --text: #1d1b22; --muted: #5f5a6b; --accent: #c4372c; --rule: #e6e2ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d0b10; --text: #ece9f1; --muted: #a8a2b5; --accent: #ff7a6e; --rule: #2a2631; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--rule); }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>ChewyFlix Privacy Policy</h1>
+  <p class="date">Last updated: October 26, 2026</p>
+
+  <p>ChewyFlix is an independent app for watching the movies and TV shows on a private Jellyfin media
+  server run by Nick Chu. It is not made by or affiliated with the Jellyfin project. This policy
+  explains what ChewyFlix stores and where.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li><strong>No ads, no tracking, no analytics.</strong> ChewyFlix doesn’t sell or share your data.</li>
+    <li>ChewyFlix talks to two places only: Nick’s media server, and Tailscale’s service, which sets up the
+    private, encrypted connection to that server.</li>
+  </ul>
+
+  <h2>What stays on your device</h2>
+  <p>A sign-in key from the server (never your password), this phone’s key for the private connection,
+  your settings and, in sample mode, the pretend viewing history. Deleting the app removes all of this.</p>
+
+  <h2>What’s stored on the media server</h2>
+  <p>The server keeps your account and, as Jellyfin always does, what you’ve watched, where you stopped
+  in each film or episode, and your favorites, so you can pick up where you left off.</p>
+  <p>If you ask for an account in ChewyFlix (or ChewyHub), the server also stores your <strong>first and last
+  name, email address and (optionally) phone number</strong>. They are used only so the server’s owner can
+  approve your account and so you can reset your password by email. Only the server’s owner can see them.</p>
+
+  <h2>The private connection (Tailscale)</h2>
+  <p>When you sign in, ChewyFlix joins the server’s private network using Tailscale, a service from
+  Tailscale Inc. To set up the connection, Tailscale’s service receives this phone’s name on that
+  network (which includes your username), its network addresses and its operating system. Your films
+  and shows travel encrypted between your phone and the server; Tailscale can’t see them. Signing out
+  disconnects this phone, and deleting your account removes it from the network. Tailscale’s own
+  privacy policy is at <a href="https://tailscale.com/privacy-policy">tailscale.com/privacy-policy</a>.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Delete your account and the personal details stored with it in <strong>Settings → Delete my account</strong>.
+    This deletes the same account in ChewyHub.</li>
+    <li>Edit your name, email and phone in the ChewyHub app (<strong>Settings → Account → Your profile</strong>), or ask
+    the server’s owner.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>ChewyFlix isn’t directed at children under 13, and its sign-up isn’t intended for them.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Nick Chu · <a href="mailto:nickchu954@gmail.com">nickchu954@gmail.com</a></p>
+</main>
+</body>
+</html>
